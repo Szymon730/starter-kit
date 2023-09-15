@@ -1,0 +1,82 @@
+<core:FragmentDefinition 
+xmlns="sap.m" 
+xmlns:core="sap.ui.core" 
+xmlns:l="sap.ui.layout"
+xmlns:f="sap.ui.layout.form"
+
+controllerName="stk.starterkit.controller.CustomerDetails" displayBlock="true">
+    <Dialog id="contactDialog" title="{i18n>contactDetails}">
+    
+    <VBox id="_IDGenVBox1" class="sapUiSmallMargin">
+		<f:Form id="FormChange354wide"
+			editable="false">
+			<f:title>
+				<core:Title id="_IDGenTitle1" text="{i18n>contactInformation}" />
+			</f:title>
+			<f:layout>
+				<f:ResponsiveGridLayout id="_IDGenResponsiveGridLayout1"
+					labelSpanXL="4"
+					labelSpanL="3"
+					labelSpanM="4"
+					labelSpanS="12"
+					adjustLabelSpan="false"
+					emptySpanXL="0"
+					emptySpanL="4"
+					emptySpanM="0"
+					emptySpanS="0"
+					columnsXL="2"
+					columnsL="1"
+					columnsM="1"
+					singleContainerFullSize="false" />
+			</f:layout>
+			<f:formContainers>
+				<f:FormContainer id="_IDGenFormContainer1">
+					<f:formElements>
+						<f:FormElement id="_IDGenFormElement1" label="{i18n>Name}">
+							<f:fields>
+								<Input id="_IDGenInput4" value="{ContactName}" editable="false"/>
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement id="_IDGenFormElement2" label="{i18n>ContactTitle}">
+							<f:fields>
+								<Input id="_IDGenInput1" value="{ContactTitle}" editable="false"/>
+							
+									
+							</f:fields>
+						</f:FormElement>
+						<f:FormElement id="_IDGenFormElement3" label="{i18n>Adress}">
+							<f:fields>
+								<Input id="_IDGenInput2" value="{Address}" editable="false"/>
+									
+							</f:fields>
+						</f:FormElement>
+
+                        <f:FormElement id="_IDGenFormElement4"  label="{i18n>Phone}">
+							<f:fields>
+								<Input id="_IDGenInput3"  value="{Phone}" editable="false"/>
+									
+							</f:fields>
+						</f:FormElement>
+						
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>
+	</VBox>
+    	
+    <FlexBox id="_IDGenFlexBox1" 
+                height="100px"
+                alignItems="Start"
+	            justifyContent="End">
+     <Button id="_IDGenButton2"   
+						text="Close"
+						press="onClose"
+                        class="sapUiMediumMarginEnd sapUiLargeMarginTopBottom"
+                        type="Critical"
+            />
+    
+    </FlexBox>
+    </Dialog>     
+
+
+</core:FragmentDefinition>

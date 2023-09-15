@@ -1,0 +1,125 @@
+<mvc:View controllerName="stk.starterkit.controller.PerformanceController"
+    
+    
+    xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+
+    <Page id="_IDGenPage1">
+
+   
+   <FlexBox id="_IDGenFlexBox1" 
+                height="50px"
+                alignItems="Start"
+	            justifyContent="Center">
+
+                <Title id="_IDGenTitle1" text="Performance">
+
+                </Title>
+
+    </FlexBox>
+
+    <Table id="_IDGenTable1"  items="{path:'/Employees', parameters: {expand:'Orders'}}" >
+
+            <columns>
+
+                    <Column id="_IDGenColumn1">
+
+                        <Label id="_IDGenLabel3"  text="{i18n>Name}"/>
+
+                    </Column>
+
+                    <Column id="_IDGenColumn2">
+
+                        <Label id="_IDGenLabel4"  text="{i18n>Position}"/>
+
+                    </Column>
+
+                    <Column id="_IDGenColumn3">
+
+                    <Label id="_IDGenLabel2" text="{i18n>Orders}"/>
+
+                    
+
+                    
+                    </Column>
+
+
+
+                    <Column id="_IDGenColumn4">
+                     <Label id="_IDGenLabel6" text="{i18n>Actions}"/>
+
+
+                   
+
+                    
+                     </Column>
+
+                   
+
+            </columns>
+
+            <items>
+
+            
+
+             <ColumnListItem id="_IDGenColumnListItem1"   >
+             
+
+                           
+                            <Text id="_IDGenText1"    text="{FirstName} {LastName}" />
+
+                            <Text id="_IDGenText2"  text="{Title}"/>
+
+                            <Text id="_IDGenText3"  text="{= ${Orders}.length}"/>
+
+                             <FlexBox id="_IDGenFlexBox2" 
+                    height="100px"
+                    alignItems="Start"
+	                justifyContent="End">
+
+                    <Button id="_IDGenButton1" 
+						text="Motivate"
+						press="motivateEmployee"
+                        class="sapUiMediumMarginEnd sapUiMediumMarginTopBottom"
+                        type="Default"
+						ariaDescribedBy="acceptButtonDescription genericButtonDescription"/>
+
+                    <Button id="_IDGenButton2" 
+						text="Fire"
+						press="fireEmployee"
+                        class="sapUiMediumMarginEnd sapUiMediumMarginTopBottom"
+                        type="Default"
+						ariaDescribedBy="acceptButtonDescription genericButtonDescription"/>
+
+
+
+
+                    </FlexBox>
+
+
+
+                           
+
+                            
+
+                            
+                           
+
+                        </ColumnListItem>
+
+                
+
+               
+               
+            </items>
+
+
+
+
+            </Table>
+
+
+    </Page>
+</mvc:View>

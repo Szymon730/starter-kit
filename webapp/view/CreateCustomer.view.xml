@@ -1,0 +1,55 @@
+<mvc:View controllerName="stk.starterkit.controller.CreateCustomer"
+    
+    
+    xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+
+<Page id="_IDGenPage1">
+<FlexBox id="_IDGenFlexBox1"
+    height="100px"
+    alignItems="Start"
+	justifyContent="End">
+<Button id="_IDGenButton1" 
+						text="{i18n>createCustomer}"
+						press="create"
+                        class="sapUiMediumMarginEnd sapUiMediumMarginTopBottom "
+                       
+                        
+                        
+                        type="Accept"
+						ariaDescribedBy="acceptButtonDescription genericButtonDescription"/>
+
+    </FlexBox>
+
+    
+
+    <l:VerticalLayout id="_IDGenVerticalLayout1" class="sapUiContentPadding" width="100%">
+		<Label id="_IDGenLabel1" text="Customer ID" labelFor="wrappingInput" />
+		<Input
+			id="CustomerID"
+			placeholder="Enter Customer ID"
+			showSuggestion="false"
+			width="50%">
+			
+		</Input>
+	</l:VerticalLayout>
+
+    <l:VerticalLayout id="_IDGenVerticalLayout2"  class="sapUiContentPadding" width="100%">
+		<Label id="_IDGenLabel2"  text="Customer Name" labelFor="wrappingInput" />
+		<Input id="CustomerName"
+			
+			placeholder="Enter Customer Name"
+			showSuggestion="false"
+			width="50%">
+			
+		</Input>
+	</l:VerticalLayout>
+
+
+</Page>
+
+
+
+    </mvc:View>
